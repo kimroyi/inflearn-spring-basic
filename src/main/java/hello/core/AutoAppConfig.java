@@ -16,8 +16,8 @@ import org.springframework.context.annotation.FilterType;
         //member만 컴포넌트 대상이 된다.
         //basePackages = {"hello.core", "hello.service"} 여러 시작 위치를 지정 가능
         //만약 basePackage를 지정하지 않으면 @ComponentScan이 붙은 설정 정보 클래스의 패키지가 시작 위치가 된다.
-        basePackages = "hello.core.member",
-        basePackageClasses = AutoAppConfig.class, //지정한 클래스의 패키지를 탐색 시작 위치로 지정한다.
+//        basePackages = "hello.core.member",
+//        basePackageClasses = AutoAppConfig.class, //지정한 클래스의 패키지를 탐색 시작 위치로 지정한다.
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 public class AutoAppConfig {
