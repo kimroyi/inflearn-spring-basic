@@ -25,6 +25,10 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	//웹 스코프는 웹 환경에서만 동작하므로 web 환경이 동작하도록 라이브러리를 추가하자.
+	//web 라이브러리 추가
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
 //	implementation 'javax.inject:javax.inject:1' //스프링 3.x부터 발생하는 문제
 	implementation 'jakarta.inject:jakarta.inject-api:2.0.1' //추가
 
